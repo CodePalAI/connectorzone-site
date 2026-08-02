@@ -1,0 +1,98 @@
+# ConnectorZone
+
+> A free catalog of Model Context Protocol connectors with copy ready configuration for nine
+> MCP capable clients. Built from the official MCP Registry, 19,630 records read
+> on 2026-08-02, 14,240 profiles published.
+
+ConnectorZone is an independent aggregator. It is not affiliated with Anthropic, OpenAI,
+Google, Microsoft, GitHub, Anysphere or the Model Context Protocol project. A registry listing
+is a namespace ownership check, not a security review, and this site does not execute or audit
+connectors.
+
+## What this site adds over the registry
+
+- Registry package metadata resolved into a runnable command per package type.
+- The exact configuration block each client expects, across four different config shapes.
+- A compatibility verdict per client with the rule and the documentation date behind it.
+- A completeness score with a published breakdown, and gates that keep thin records out.
+
+## Core pages
+
+- [Connector directory](https://connector.zone/connectors/): 14,240 profiles, filterable by transport, credential and client.
+- [Client reference](https://connector.zone/clients/): where each client keeps configuration and which transports it documents.
+- [Categories](https://connector.zone/categories/): 21 derived categories.
+- [Collections](https://connector.zone/collections/): curated sets selected by published rules.
+- [Methodology](https://connector.zone/methodology/): scoring, gating and compatibility rules in full.
+- [Data status](https://connector.zone/status/): the exact registry snapshot behind this build.
+- [Data endpoints](https://connector.zone/api/): static JSON for the catalog.
+
+## Clients covered
+
+- Claude Desktop by Anthropic, config key `mcpServers`, transports stdio, streamable-http, sse: https://connector.zone/clients/claude-desktop/
+- Claude Code by Anthropic, config key `mcpServers`, transports stdio, streamable-http, sse: https://connector.zone/clients/claude-code/
+- ChatGPT and the OpenAI API by OpenAI, config key `tools`, transports streamable-http, sse: https://connector.zone/clients/chatgpt/
+- Gemini CLI by Google, config key `mcpServers`, transports stdio, streamable-http, sse: https://connector.zone/clients/gemini-cli/
+- Cursor by Anysphere, config key `mcpServers`, transports stdio, streamable-http, sse: https://connector.zone/clients/cursor/
+- VS Code with GitHub Copilot by Microsoft and GitHub, config key `servers`, transports stdio, streamable-http, sse: https://connector.zone/clients/vscode-copilot/
+- Windsurf by Windsurf, config key `mcpServers`, transports stdio, streamable-http, sse: https://connector.zone/clients/windsurf/
+- Codex CLI by OpenAI, config key `mcp_servers`, transports stdio, streamable-http: https://connector.zone/clients/codex-cli/
+- Zed by Zed Industries, config key `context_servers`, transports stdio: https://connector.zone/clients/zed/
+
+## Categories
+
+- General utilities (5,296): https://connector.zone/categories/general-utilities/
+- Commerce and finance (1,504): https://connector.zone/categories/commerce-and-finance/
+- AI and agents (1,277): https://connector.zone/categories/ai-and-agents/
+- Developer tools (1,114): https://connector.zone/categories/developer-tools/
+- Productivity and docs (543): https://connector.zone/categories/productivity-and-docs/
+- Marketing and CRM (540): https://connector.zone/categories/marketing-and-crm/
+- Location and travel (509): https://connector.zone/categories/location-and-travel/
+- Security and identity (461): https://connector.zone/categories/security-and-identity/
+- Science and research (410): https://connector.zone/categories/science-and-research/
+- Web and search (404): https://connector.zone/categories/web-and-search/
+- Data and databases (351): https://connector.zone/categories/data-and-databases/
+- Legal and compliance (329): https://connector.zone/categories/legal-and-compliance/
+- Cloud and infrastructure (290): https://connector.zone/categories/cloud-and-infrastructure/
+- Design and media (243): https://connector.zone/categories/design-and-media/
+- Documents and files (226): https://connector.zone/categories/documents-and-files/
+- Automation and workflow (165): https://connector.zone/categories/automation-and-workflow/
+- Health and life sciences (151): https://connector.zone/categories/health-and-life-sciences/
+- Government and public data (143): https://connector.zone/categories/government-and-public-data/
+- Gaming and entertainment (124): https://connector.zone/categories/gaming-and-entertainment/
+- People and hiring (91): https://connector.zone/categories/people-and-hr/
+- Communications (69): https://connector.zone/categories/communications/
+
+## Guides
+
+- [How to choose an MCP connector](https://connector.zone/guides/choosing-a-connector/): A practical filter for picking connectors that will still work in six months, based on what the registry actually tells you.
+- [A security review for MCP connectors](https://connector.zone/guides/mcp-security/): What a registry listing does and does not tell you, and the review that actually reduces risk before you attach a connector.
+- [Local servers or hosted endpoints](https://connector.zone/guides/local-vs-remote/): The trade between running a connector on your machine and attaching one over HTTPS, and how to tell which your situation calls for.
+- [OAuth and authorisation in MCP](https://connector.zone/guides/oauth-and-authorization/): How authorisation works for HTTP based MCP servers, what the consent screen is really telling you, and where keys still make sense.
+- [Configuring MCP in every major client](https://connector.zone/guides/client-configuration/): Where each client keeps its config, which key name it expects and the specific mistakes that stop a server loading.
+- [What the 2026-07-28 protocol revision changes](https://connector.zone/guides/protocol-2026-07-28/): The current specification revision, what moved since the previous one, and how to tell whether your client and servers are aligned.
+- [Debugging a connector that will not load](https://connector.zone/guides/debugging-connections/): An ordered checklist for the silent failures, from invalid JSON to tool budgets, with the command that answers each one.
+- [Reading provenance in the MCP registry](https://connector.zone/guides/connector-provenance/): What a namespace proves, how to spot bulk publishing, and why the catalog caps how many entries one publisher can contribute.
+
+## Highest scoring connectors in this snapshot
+
+- AIOProductOS MCP by aioproductos.com, score 100: https://connector.zone/connectors/com-aioproductos-mcp/
+- Aiven MCP by aiven.io, score 100: https://connector.zone/connectors/io-aiven-mcp/
+- Bisibility by bisibility.com, score 100: https://connector.zone/connectors/com-bisibility-mcp/
+- Carbone MCP by carbone.io, score 100: https://connector.zone/connectors/io-carbone-carbone-mcp/
+- Numeratica - financial planning calculations by numeratica.com, score 100: https://connector.zone/connectors/com-numeratica-mcp/
+- Opedd - Licensed Content for AI by opedd.com, score 100: https://connector.zone/connectors/com-opedd-opedd-mcp/
+- Rendobar by rendobar.com by rendobar.com, score 100: https://connector.zone/connectors/com-rendobar-mcp/
+- TracePass by tracepass.eu, score 100: https://connector.zone/connectors/eu-tracepass-tracepass/
+- BorealHost by borealhost.ai, score 98: https://connector.zone/connectors/ai-borealhost-mcp/
+- Bowmark by bowmark.ai, score 98: https://connector.zone/connectors/ai-bowmark-bowmark/
+- Cellarion by cellarion.app, score 98: https://connector.zone/connectors/app-cellarion-cellarion/
+- Cenogram - Polish Real Estate Data by cenogram.pl, score 98: https://connector.zone/connectors/pl-cenogram-mcp-server/
+- Chamade by chamade.io, score 98: https://connector.zone/connectors/io-chamade-server/
+- Chronary by chronary.ai, score 98: https://connector.zone/connectors/ai-chronary-mcp/
+- FiatDock by fiatdock.com, score 98: https://connector.zone/connectors/com-fiatdock-fiatdock-mcp/
+
+## Data licence
+
+Connector records come from the official Model Context Protocol Registry under CC0 1.0.
+Original ConnectorZone text, scoring rules and category definitions are the work of this
+project. Attribution with a link is appreciated when reusing either.

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ConnectorZone guides</title>
+    <link>https://connector.zone/guides/</link>
+    <atom:link href="https://connector.zone/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Practical guides to Model Context Protocol connectors, clients and configuration.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 30 Jul 2026 09:00:00 GMT</lastBuildDate>
+    <item>
+      <title>How to choose an MCP connector</title>
+      <link>https://connector.zone/guides/choosing-a-connector/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/choosing-a-connector/</guid>
+      <description>A working method for choosing between thousands of Model Context Protocol connectors, using provenance, transport, credential shape and published references rather than popularity.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>A security review for MCP connectors</title>
+      <link>https://connector.zone/guides/mcp-security/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/mcp-security/</guid>
+      <description>A practical security review for Model Context Protocol connectors, covering trust boundaries, credential scope, prompt injection through tool results and what registry listing really certifies.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Local servers or hosted endpoints</title>
+      <link>https://connector.zone/guides/local-vs-remote/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/local-vs-remote/</guid>
+      <description>A comparison of local stdio MCP servers and hosted HTTP endpoints, covering latency, credentials, client support, data flow and the cases where only one option works.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>OAuth and authorisation in MCP</title>
+      <link>https://connector.zone/guides/oauth-and-authorization/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/oauth-and-authorization/</guid>
+      <description>A working explanation of the MCP authorisation model for HTTP servers, covering scoped consent, token storage, revocation and the difference between an authorisation flow and a pasted API key.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Configuring MCP in every major client</title>
+      <link>https://connector.zone/guides/client-configuration/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/client-configuration/</guid>
+      <description>A cross client reference for Model Context Protocol configuration, covering file locations, key names, transport fields and the copy paste errors that silently break a server.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What the 2026-07-28 protocol revision changes</title>
+      <link>https://connector.zone/guides/protocol-2026-07-28/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/protocol-2026-07-28/</guid>
+      <description>A practical read of the 2026-07-28 Model Context Protocol specification revision, what it means for connector authors and operators, and how to check that a client and server agree.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Debugging a connector that will not load</title>
+      <link>https://connector.zone/guides/debugging-connections/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/debugging-connections/</guid>
+      <description>A step by step method for debugging Model Context Protocol servers that fail to load, report zero tools or disappear after a client update.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Reading provenance in the MCP registry</title>
+      <link>https://connector.zone/guides/connector-provenance/</link>
+      <guid isPermaLink="true">https://connector.zone/guides/connector-provenance/</guid>
+      <description>How to read publisher provenance in the official MCP Registry, including namespace verification, bulk submissions, duplicate descriptions and the limits of any registry signal.</description>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

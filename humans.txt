@@ -1,0 +1,9 @@
+/* SITE */
+Site: connector.zone
+Purpose: a free catalog of Model Context Protocol connectors with per client configuration
+Standards: HTML5, CSS custom properties, ECMAScript modules
+Components: Astro, sharp
+Data: official Model Context Protocol Registry, CC0 1.0
+
+/* NOTE */
+No analytics, no cookies, no third party scripts, no advertising.

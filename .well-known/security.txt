@@ -1,0 +1,9 @@
+Contact: https://github.com/CodePalAI/ConnectorZone/security/advisories/new
+Contact: https://connector.zone/report/
+Expires: 2027-07-30T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://connector.zone/.well-known/security.txt
+Policy: https://connector.zone/terms/
+
+# Vulnerabilities in a connector listed on this site belong with that connector's publisher.
+# Every profile page links to the repository on its registry record.

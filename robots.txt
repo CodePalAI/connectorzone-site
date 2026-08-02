@@ -1,0 +1,119 @@
+# ConnectorZone crawler policy
+# Full policy and reasoning: https://connector.zone/about/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /404/
+
+# Generative crawlers may read the site. The bulk JSON mirrors upstream registry data,
+# so fetch that from the registry rather than from here.
+
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Bytespider
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: Timpibot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+User-agent: YouBot
+Allow: /
+Disallow: /api/
+Disallow: /search-index.json
+
+Sitemap: https://connector.zone/sitemap-index.xml
+
+# Structured summary for language models: https://connector.zone/llms.txt

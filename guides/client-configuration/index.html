@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en" prefix="og: https://ogp.me/ns#"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Configuring MCP in every major client | ConnectorZone</title><meta name="description" content="A cross client reference for Model Context Protocol configuration, covering file locations, key names, transport fields and the copy paste errors that..."><link rel="canonical" href="https://connector.zone/guides/client-configuration/"><link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta property="og:type" content="website"><meta property="og:site_name" content="ConnectorZone"><meta property="og:locale" content="en_US"><meta property="og:title" content="Configuring MCP in every major client | ConnectorZone"><meta property="og:description" content="A cross client reference for Model Context Protocol configuration, covering file locations, key names, transport fields and the copy paste errors that..."><meta property="og:url" content="https://connector.zone/guides/client-configuration/"><meta property="og:image" content="https://connector.zone/img/og-guides.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="ConnectorZone guide card on a dark connection atlas background."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Configuring MCP in every major client | ConnectorZone"><meta name="twitter:description" content="A cross client reference for Model Context Protocol configuration, covering file locations, key names, transport fields and the copy paste errors that..."><meta name="twitter:image" content="https://connector.zone/img/og-guides.png"><meta name="twitter:image:alt" content="ConnectorZone guide card on a dark connection atlas background."><meta name="theme-color" content="#0a0d0c"><meta name="color-scheme" content="dark"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="alternate" type="application/rss+xml" title="ConnectorZone guides" href="/rss.xml"><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://connector.zone/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://connector.zone/guides/"}]},{"@type":"TechArticle","headline":"Configuring MCP in every major client","description":"A cross client reference for Model Context Protocol configuration, covering file locations, key names, transport fields and the copy paste errors that silently break a server.","datePublished":"2026-07-30","dateModified":"2026-07-30","url":"https://connector.zone/guides/client-configuration/","inLanguage":"en","author":{"@type":"Organization","name":"ConnectorZone"},"publisher":{"@id":"https://connector.zone/#organization"},"keywords":"configuration, clients, troubleshooting"}]}</script><link rel="stylesheet" href="/_assets/style.CjehTzVk.css"><script type="module" src="/_assets/page.BtpeBI9q.js"></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-head" data-astro-cid-fzpbxy5g><div class="site-head-inner" data-astro-cid-fzpbxy5g><a class="brand" href="/" aria-label="ConnectorZone home" data-astro-cid-fzpbxy5g><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" data-astro-cid-fzpbxy5g><circle cx="12" cy="12" r="3.1" fill="currentColor" data-astro-cid-fzpbxy5g></circle><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.4" data-astro-cid-fzpbxy5g></circle><path d="M12 3v3.2M12 17.8V21M3 12h3.2M17.8 12H21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" data-astro-cid-fzpbxy5g></path></svg><span class="brand-text" data-astro-cid-fzpbxy5g>connector<span class="brand-dot" data-astro-cid-fzpbxy5g>.</span>zone</span></a><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/connectors/" data-astro-cid-fzpbxy5g>Connectors</a></li><li data-astro-cid-fzpbxy5g><a href="/clients/" data-astro-cid-fzpbxy5g>Clients</a></li><li data-astro-cid-fzpbxy5g><a href="/categories/" data-astro-cid-fzpbxy5g>Categories</a></li><li data-astro-cid-fzpbxy5g><a href="/collections/" data-astro-cid-fzpbxy5g>Collections</a></li><li data-astro-cid-fzpbxy5g><a href="/guides/" aria-current="page" data-astro-cid-fzpbxy5g>Guides</a></li></ul></nav><a class="btn btn-primary btn-sm head-cta" href="/connectors/" data-astro-cid-fzpbxy5g>Browse catalog</a></div></header><main id="main"><article class="band-tight" data-astro-cid-xmaeph5b><div class="shell" data-astro-cid-xmaeph5b><nav class="crumbs" aria-label="Breadcrumb" data-astro-cid-vx4iavld><ol data-astro-cid-vx4iavld><li data-astro-cid-vx4iavld><a href="/" data-astro-cid-vx4iavld>Home</a></li><li data-astro-cid-vx4iavld><a href="/guides/" data-astro-cid-vx4iavld>Guides</a></li><li aria-current="page" data-astro-cid-vx4iavld>Configuring MCP in every major client</li></ol></nav><header class="guide-head" data-astro-cid-xmaeph5b><h1 data-astro-cid-xmaeph5b>Configuring MCP in every major client</h1><p class="guide-summary" data-astro-cid-xmaeph5b>Where each client keeps its config, which key name it expects and the specific mistakes that stop a server loading.</p><p class="mono dim guide-meta" data-astro-cid-xmaeph5b>9 minute read. Updated <time datetime="2026-07-30" data-astro-cid-xmaeph5b>2026-07-30</time>.</p></header><div class="guide-body" data-astro-cid-xmaeph5b><div class="prose" data-astro-cid-xmaeph5b><p>The protocol is standard. The configuration is not. Nine widely used clients read MCP server
+definitions from nine different places, using at least four different shapes, and the errors
+they produce when you get it wrong are mostly silence.</p>
+<p>This is the reference we wish existed when we started. Every connector profile on this site
+generates the correct block automatically, but it helps to know why the blocks differ.</p>
+<h2 id="four-shapes-not-one">Four shapes, not one</h2>
+<p><strong>The <code>mcpServers</code> object.</strong> Claude Desktop, Claude Code, Cursor, Gemini CLI and Windsurf all
+use a top level <code>mcpServers</code> object mapping a name to a definition. This is the closest thing
+to a common format, and it is still not portable, because the remote field name differs.</p>
+<p><strong>The <code>servers</code> object.</strong> VS Code uses <code>servers</code>, not <code>mcpServers</code>, and each entry carries an
+explicit <code>type</code> field. A block copied from Cursor will parse as JSON and then do nothing,
+because the key VS Code looks for is absent.</p>
+<p><strong>The <code>context_servers</code> object.</strong> Zed nests servers inside the editor settings file under
+<code>context_servers</code>, and each entry needs a <code>source</code> field. Nothing else uses this shape.</p>
+<p><strong>TOML.</strong> Codex CLI configures MCP in <code>~/.codex/config.toml</code> using <code>[mcp_servers.name]</code>
+tables. Every JSON snippet on the internet is wrong for it.</p>
+<h2 id="where-the-files-live">Where the files live</h2>
+<table>
+<thead>
+<tr>
+<th>Client</th>
+<th>Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Desktop</td>
+<td><code>~/Library/Application Support/Claude/claude_desktop_config.json</code> on macOS, <code>%APPDATA%\Claude\claude_desktop_config.json</code> on Windows</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td><code>.mcp.json</code> in the repository, or <code>~/.claude.json</code> for user scope</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td><code>.cursor/mcp.json</code> in the project, or <code>~/.cursor/mcp.json</code> globally</td>
+</tr>
+<tr>
+<td>VS Code</td>
+<td><code>.vscode/mcp.json</code> in the workspace, or the user config via the command palette</td>
+</tr>
+<tr>
+<td>Gemini CLI</td>
+<td><code>~/.gemini/settings.json</code>, or <code>.gemini/settings.json</code> in a project</td>
+</tr>
+<tr>
+<td>Windsurf</td>
+<td><code>~/.codeium/windsurf/mcp_config.json</code></td>
+</tr>
+<tr>
+<td>Codex CLI</td>
+<td><code>~/.codex/config.toml</code></td>
+</tr>
+<tr>
+<td>Zed</td>
+<td><code>~/.config/zed/settings.json</code>, or <code>.zed/settings.json</code> in a project</td>
+</tr>
+<tr>
+<td>ChatGPT</td>
+<td>No file. Connectors are added in settings, and the API takes a URL in the request body</td>
+</tr>
+</tbody>
+</table>
+<p>Full details, including which transports each client documents and what it cannot do, are on
+the <a href="/clients/">client pages</a>.</p>
+<h2 id="the-remote-field-trap">The remote field trap</h2>
+<p>This is the most common failure we see, and it produces no error message.</p>
+<p>Attaching the same hosted endpoint requires a different field name depending on the client:</p>
+<ul>
+<li>Cursor, Claude Code and Claude Desktop use <code>url</code>.</li>
+<li>Gemini CLI uses <code>httpUrl</code> for streamable HTTP and <code>url</code> for server sent events. Using <code>url</code>
+for a streamable HTTP server selects the wrong transport rather than failing.</li>
+<li>Windsurf uses <code>serverUrl</code>.</li>
+<li>VS Code uses <code>url</code> together with <code>"type": "http"</code>.</li>
+</ul>
+<p>A block that works perfectly in one editor will load as an empty server in another. If a
+server appears in the client list with zero tools, check the field name first.</p>
+<h2 id="secrets-in-config-files">Secrets in config files</h2>
+<p>Config files get committed. That is not a hypothetical.</p>
+<p>VS Code has the best answer: an <code>inputs</code> array declares a prompt, marks it as a password, and
+the value never lands in the file. Claude Code and several others expand shell variables, so
+<code>${SERVICE_TOKEN}</code> in the file resolves from your environment at startup.</p>
+<p>If your client supports neither, keep the file out of version control and treat it with the
+same care as a credentials file, because that is what it is.</p>
+<h2 id="restart-behaviour">Restart behaviour</h2>
+<p>Clients differ on whether they notice a changed file.</p>
+<p>Claude Desktop needs a full quit and relaunch. Closing the window is not enough on macOS,
+where the application keeps running. This is responsible for a large share of the reports
+that a config change did nothing.</p>
+<p>Editors generally reload on demand and expose a command to restart a single server, which is
+much faster to iterate against.</p>
+<p>Command line clients pick up changes on the next run.</p>
+<h2 id="confirming-it-worked">Confirming it worked</h2>
+<p>Every client has a way to list what it discovered, and checking it takes five seconds:</p>
+<ul>
+<li>Claude Code and Gemini CLI: the <code>/mcp</code> command.</li>
+<li>Cursor and VS Code: the MCP panel in settings, which lists servers and their tool counts.</li>
+<li>Claude Desktop: the tools indicator in the composer.</li>
+<li>Codex CLI: the <code>/mcp</code> command.</li>
+<li>Zed: the agent panel server list.</li>
+</ul>
+<p>A server that shows up with zero tools has connected and returned nothing, which usually
+means a missing credential. A server that does not show up at all has not been read, which
+usually means the wrong key name or invalid JSON.</p>
+<h2 id="tool-budgets">Tool budgets</h2>
+<p>Several clients cap how many tools they will present to the model at once. When you cross the
+cap, tools disappear without a warning, and which ones survive is not always predictable.</p>
+<p>If you have a large bridge connector attached alongside several focused ones, disable the
+bridge while you work on something specific. Fewer, sharper tools produce better results
+anyway.</p>
+<h2 id="the-fastest-way-to-debug">The fastest way to debug</h2>
+<ol>
+<li>Validate the file. A trailing comma in JSON breaks the whole file, not just one entry.</li>
+<li>Confirm the top level key matches the client. <code>servers</code> for VS Code, <code>context_servers</code> for
+Zed, <code>mcpServers</code> for the rest, TOML tables for Codex.</li>
+<li>Run the command by hand in a terminal. If <code>npx -y some-package</code> fails there, it will fail
+in the client too, and the terminal will tell you why.</li>
+<li>Check the remote field name against the table above.</li>
+<li>Restart the client properly, which for Claude Desktop means quitting it.</li>
+<li>Open the client server list and read the tool count.</li>
+</ol>
+<p>If you get through all six and it still does not work, the connector profile page on this
+site lists the publisher repository, which is the right place to file the issue.</p>
+</div><aside class="guide-side" data-astro-cid-xmaeph5b><nav class="panel side-card" aria-label="On this page" data-astro-cid-xmaeph5b><h2 class="side-title" data-astro-cid-xmaeph5b>On this page</h2><ul class="toc" data-astro-cid-xmaeph5b><li data-astro-cid-xmaeph5b><a href="#four-shapes-not-one" data-astro-cid-xmaeph5b>Four shapes, not one</a></li><li data-astro-cid-xmaeph5b><a href="#where-the-files-live" data-astro-cid-xmaeph5b>Where the files live</a></li><li data-astro-cid-xmaeph5b><a href="#the-remote-field-trap" data-astro-cid-xmaeph5b>The remote field trap</a></li><li data-astro-cid-xmaeph5b><a href="#secrets-in-config-files" data-astro-cid-xmaeph5b>Secrets in config files</a></li><li data-astro-cid-xmaeph5b><a href="#restart-behaviour" data-astro-cid-xmaeph5b>Restart behaviour</a></li><li data-astro-cid-xmaeph5b><a href="#confirming-it-worked" data-astro-cid-xmaeph5b>Confirming it worked</a></li><li data-astro-cid-xmaeph5b><a href="#tool-budgets" data-astro-cid-xmaeph5b>Tool budgets</a></li><li data-astro-cid-xmaeph5b><a href="#the-fastest-way-to-debug" data-astro-cid-xmaeph5b>The fastest way to debug</a></li></ul></nav><div class="panel side-card" data-astro-cid-xmaeph5b><h2 class="side-title" data-astro-cid-xmaeph5b>Sources</h2><ul class="side-links" data-astro-cid-xmaeph5b><li data-astro-cid-xmaeph5b><a href="https://modelcontextprotocol.io/docs/develop/connect-local-servers" rel="noopener nofollow" data-astro-cid-xmaeph5b>Model Context Protocol docs, connect local servers</a></li><li data-astro-cid-xmaeph5b><a href="https://code.visualstudio.com/docs/copilot/customization/mcp-servers" rel="noopener nofollow" data-astro-cid-xmaeph5b>Visual Studio Code docs, MCP servers</a></li><li data-astro-cid-xmaeph5b><a href="https://cursor.com/docs/context/mcp" rel="noopener nofollow" data-astro-cid-xmaeph5b>Cursor docs, Model Context Protocol</a></li><li data-astro-cid-xmaeph5b><a href="https://google-gemini.github.io/gemini-cli/docs/tools/mcp-server.html" rel="noopener nofollow" data-astro-cid-xmaeph5b>Gemini CLI docs, MCP servers</a></li><li data-astro-cid-xmaeph5b><a href="https://platform.openai.com/docs/guides/tools-connectors-mcp" rel="noopener nofollow" data-astro-cid-xmaeph5b>OpenAI platform docs, connectors and MCP</a></li></ul></div></aside></div><nav class="guide-nav" aria-label="Guide navigation" data-astro-cid-xmaeph5b><a class="guide-nav-link" href="/guides/oauth-and-authorization/" rel="prev" data-astro-cid-xmaeph5b><span class="mono dim" data-astro-cid-xmaeph5b>Previous</span><span data-astro-cid-xmaeph5b>OAuth and authorisation in MCP</span></a><a class="guide-nav-link guide-nav-next" href="/guides/protocol-2026-07-28/" rel="next" data-astro-cid-xmaeph5b><span class="mono dim" data-astro-cid-xmaeph5b>Next</span><span data-astro-cid-xmaeph5b>What the 2026-07-28 protocol revision changes</span></a></nav></div></article></main><footer class="site-foot" data-astro-cid-nns7i3if><div class="shell" data-astro-cid-nns7i3if><div class="foot-grid" data-astro-cid-nns7i3if><div class="foot-lead" data-astro-cid-nns7i3if><a class="brand" href="/" data-astro-cid-nns7i3if>connector<span class="brand-dot" data-astro-cid-nns7i3if>.</span>zone</a><p class="muted foot-blurb" data-astro-cid-nns7i3if>A free catalog of Model Context Protocol connectors, with the configuration each client actually expects and a reason attached to every claim.</p><p class="mono dim foot-sync" data-astro-cid-nns7i3if>14,240 profiles from 19,630 registry records. Synced 2 August 2026.</p></div><nav class="foot-col" aria-label="Catalog" data-astro-cid-nns7i3if><h2 data-astro-cid-nns7i3if>Catalog</h2><ul data-astro-cid-nns7i3if><li data-astro-cid-nns7i3if><a href="/connectors/" data-astro-cid-nns7i3if>All connectors</a></li><li data-astro-cid-nns7i3if><a href="/categories/" data-astro-cid-nns7i3if>Categories</a></li><li data-astro-cid-nns7i3if><a href="/collections/" data-astro-cid-nns7i3if>Collections</a></li><li data-astro-cid-nns7i3if><a href="/compare/" data-astro-cid-nns7i3if>Compare</a></li><li data-astro-cid-nns7i3if><a href="/clients/" data-astro-cid-nns7i3if>Clients</a></li></ul></nav><nav class="foot-col" aria-label="Learn" data-astro-cid-nns7i3if><h2 data-astro-cid-nns7i3if>Learn</h2><ul data-astro-cid-nns7i3if><li data-astro-cid-nns7i3if><a href="/guides/" data-astro-cid-nns7i3if>Guides</a></li><li data-astro-cid-nns7i3if><a href="/guides/choosing-a-connector/" data-astro-cid-nns7i3if>Choosing a connector</a></li><li data-astro-cid-nns7i3if><a href="/guides/mcp-security/" data-astro-cid-nns7i3if>Security review</a></li><li data-astro-cid-nns7i3if><a href="/guides/local-vs-remote/" data-astro-cid-nns7i3if>Local or hosted</a></li><li data-astro-cid-nns7i3if><a href="/guides/protocol-2026-07-28/" data-astro-cid-nns7i3if>Protocol changes</a></li></ul></nav><nav class="foot-col" aria-label="Project" data-astro-cid-nns7i3if><h2 data-astro-cid-nns7i3if>Project</h2><ul data-astro-cid-nns7i3if><li data-astro-cid-nns7i3if><a href="/methodology/" data-astro-cid-nns7i3if>Methodology</a></li><li data-astro-cid-nns7i3if><a href="/status/" data-astro-cid-nns7i3if>Data status</a></li><li data-astro-cid-nns7i3if><a href="/changelog/" data-astro-cid-nns7i3if>Changelog</a></li><li data-astro-cid-nns7i3if><a href="/submit/" data-astro-cid-nns7i3if>Submit a connector</a></li><li data-astro-cid-nns7i3if><a href="/about/" data-astro-cid-nns7i3if>About</a></li></ul></nav><nav class="foot-col" aria-label="Legal" data-astro-cid-nns7i3if><h2 data-astro-cid-nns7i3if>Legal</h2><ul data-astro-cid-nns7i3if><li data-astro-cid-nns7i3if><a href="/privacy/" data-astro-cid-nns7i3if>Privacy</a></li><li data-astro-cid-nns7i3if><a href="/terms/" data-astro-cid-nns7i3if>Terms</a></li><li data-astro-cid-nns7i3if><a href="/trademarks/" data-astro-cid-nns7i3if>Trademarks</a></li><li data-astro-cid-nns7i3if><a href="/report/" data-astro-cid-nns7i3if>Report a problem</a></li><li data-astro-cid-nns7i3if><a href="/api/" data-astro-cid-nns7i3if>Data API</a></li></ul></nav></div><hr class="rule" data-astro-cid-nns7i3if><div class="foot-legal" data-astro-cid-nns7i3if><p class="dim" data-astro-cid-nns7i3if>ConnectorZone is an independent catalog. It is not affiliated with, endorsed by or sponsored by Anthropic, OpenAI, Google, Microsoft, GitHub, Anysphere or any other vendor named on this site. Product names and trademarks belong to their respective owners.</p><p class="dim" data-astro-cid-nns7i3if>Registry data is reused under CC0 1.0 from the official Model Context Protocol Registry. Site content is copyright 2026ConnectorZone. Source is available on<a href="https://github.com/CodePalAI/ConnectorZone" rel="noopener" data-astro-cid-nns7i3if>GitHub</a>.</p></div></div></footer><div class="grain" aria-hidden="true"></div><style>
+      .grain {
+        --grain-src: url('/img/grain.png');
+      }
+    </style></body></html>
